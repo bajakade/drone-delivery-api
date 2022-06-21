@@ -30,5 +30,5 @@ Alternatively you can open the project using **Eclipse IDE** or **NetBean** buil
 	- POST /api/drones/register  #Create new drone
 	- GET /api/drones/available  # `IDLE` drones
 	- GET /api/drones/{drone_id}/battery  #check `drone_id` current battery level
-  - GET /api/drones/{drone_id}/load # return a list of drone loads
+  	- GET /api/drones/{drone_id}/load # return a list of drone loads
 	- PATCH /api/drones/{drone_id}/load  #Add medicines to drone with id `drone_id`
