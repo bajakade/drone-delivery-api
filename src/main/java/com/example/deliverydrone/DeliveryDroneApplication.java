@@ -1,12 +1,8 @@
 package com.example.deliverydrone;
 
-import com.example.deliverydrone.models.Drone;
 import com.example.deliverydrone.models.Medication;
-import com.example.deliverydrone.models.enums.DroneModel;
-import com.example.deliverydrone.models.enums.State;
 import com.example.deliverydrone.repositories.DroneRepository;
 import com.example.deliverydrone.repositories.MedicationRepository;
-import com.example.deliverydrone.services.MedicationService;
 import controllers.DispatchController;
 import java.util.Random;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,10 +11,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import scheduler.MyTaskExecutor;
 
 @SpringBootApplication
 @EnableScheduling
-@ComponentScan(basePackageClasses = DispatchController.class)
+@ComponentScan(basePackageClasses = {DispatchController.class, MyTaskExecutor.class})
 public class DeliveryDroneApplication implements CommandLineRunner {
     private static final java.util.logging.Logger LOG = java.util.logging.Logger.getLogger(DeliveryDroneApplication.class.getName());
     

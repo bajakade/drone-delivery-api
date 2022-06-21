@@ -76,6 +76,11 @@ public class Drone implements Serializable {
     
     @Override
     public String toString(){
-        return "[ Serial No: " + serialNumber + ", model=" + model + ", Capacity=" + weight + "gr]";
+        return "[ Serial No: " + getSerialNumber() + 
+                ", model=" + getModel() + 
+                ", Status =" + getDroneStatus() +
+                ", Battery="  + 
+                getBattery() + 
+            "%]";
     }
 }
