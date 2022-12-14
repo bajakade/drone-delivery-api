@@ -27,8 +27,8 @@ Alternatively you can open the project using **Eclipse IDE** or **NetBean** buil
 	- *5%* otherwise
 	
 ### Endpoints
-	- POST /api/drones/register  	#`Create new drone`
-	- GET /api/drones/available  	# `IDLE` drones
+	- POST /api/drones/register  	# create new drone
+	- GET /api/drones/available  	# idle drones
 	- GET /api/drones/{drone_id}/battery  	# check done battery level
   	- GET /api/drones/{drone_id}/load 	# a list of done items
 	- PATCH /api/drones/{drone_id}/load  	# add medicines to drone with id `drone_id``
