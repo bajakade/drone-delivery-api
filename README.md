@@ -2,7 +2,7 @@
 Useful drone functions include delivery of small items that are (urgently) needed in locations with difficult access.
 
 ### Build
-This project us implemented using Java Springboot framework. To build this project you can either install
+This project is implemented using Java Springboot framework. To build this project simply install
 maven and run the following command in the project directory
  - `mvn package`
  
@@ -29,6 +29,6 @@ Alternatively you can open the project using **Eclipse IDE** or **NetBean** buil
 ### Endpoints
 	- POST /api/drones/register  	#`Create new drone`
 	- GET /api/drones/available  	# `IDLE` drones
-	- GET /api/drones/{drone_id}/battery  	#`check `drone_id` current battery level`
-  	- GET /api/drones/{drone_id}/load 	#`a list of drone loads`
-	- PATCH /api/drones/{drone_id}/load  	#`Add medicines to drone with id `drone_id``
+	- GET /api/drones/{drone_id}/battery  	# check done battery level
+  	- GET /api/drones/{drone_id}/load 	# a list of done items
+	- PATCH /api/drones/{drone_id}/load  	# add medicines to drone with id `drone_id``
